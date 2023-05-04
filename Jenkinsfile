@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t memriya/mc-alpine:latest .'
+        sh 'docker build -t memariyachirag126/mc-alpine:latest .'
       }
     }
     stage('Login') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push memriya/mc-alpine:latest'
+        sh 'docker push memariyachirag126/mc-alpine:latest'
       }
     }
   }
