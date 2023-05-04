@@ -4,7 +4,7 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
   environment {
-    DOCKERHUB_CREDENTIALS = credentials( 'memriya-dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials( 'docker-token')
   }
   stages {
     stage('Build') {
